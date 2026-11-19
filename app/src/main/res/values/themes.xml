@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.HomeTerminalGestion" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/acento</item>
+        <item name="colorOnPrimary">@color/fondo</item>
+        <item name="colorSecondary">@color/calido</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnSurface">@color/texto</item>
+        <item name="colorSurfaceContainerHigh">@color/superficie</item>
+        <item name="android:colorBackground">@color/fondo</item>
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/apagado</item>
+        <item name="android:textColorHint">@color/apagado</item>
+        <item name="android:statusBarColor">@color/fondo</item>
+        <item name="android:navigationBarColor">@color/fondo</item>
+        <item name="alertDialogTheme">@style/Dialogo</item>
+        <item name="materialAlertDialogTheme">@style/Dialogo</item>
+    </style>
+
+    <style name="Dialogo" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurfaceContainerHigh">@color/superficie</item>
+        <item name="colorOnSurface">@color/texto</item>
+        <item name="colorOnSurfaceVariant">@color/texto</item>
+        <item name="colorPrimary">@color/acento</item>
+    </style>
+
+    <style name="Theme.HomeTerminalGestion" parent="Base.Theme.HomeTerminalGestion" />
+
+    <!-- estilos que se repiten en las pantallas -->
+    <style name="Campo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/campo</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textColorHint">@color/apagado</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Boton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/boton</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/fondo</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BotonBorde" parent="Boton">
+        <item name="android:background">@drawable/boton_borde</item>
+        <item name="android:textColor">@color/acento</item>
+    </style>
+
+    <style name="BotonPeligro" parent="Boton">
+        <item name="android:background">@drawable/boton_peligro</item>
+        <item name="android:textColor">@color/calido</item>
+    </style>
+
+    <style name="Titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/acento</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+</resources>

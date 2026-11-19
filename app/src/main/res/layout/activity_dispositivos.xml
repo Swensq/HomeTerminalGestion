@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DispositivosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            style="@style/Titulo"
+            android:layout_marginBottom="12dp"
+            android:text="@string/titulo_dispositivos" />
+
+        <TextView
+            android:id="@+id/tvProgreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/calido"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progreso"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:progressTint="@color/acento"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/superficie"
+            android:dividerHeight="1dp" />
+
+        <TextView
+            android:id="@+id/tvVacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/msg_sin_dispositivos"
+            android:textColor="@color/apagado"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnVerificar"
+            style="@style/Boton"
+            android:text="@string/btn_verificar_todos" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            style="@style/BotonBorde"
+            android:text="@string/btn_agregar_dispositivo" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/BotonBorde"
+            android:text="@string/btn_volver" />
+
+    </LinearLayout>
+
+</LinearLayout>

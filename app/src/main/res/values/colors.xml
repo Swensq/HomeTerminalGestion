@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- paleta del tema "1978 Terminal" del launcher -->
+    <color name="fondo">#FF15232B</color>
+    <color name="superficie">#FF203C43</color>
+    <color name="acento">#FF6FBDB7</color>
+    <color name="texto">#FFF0E7D6</color>
+    <color name="apagado">#FF8FA3A6</color>
+    <color name="calido">#FFD5A65D</color>
+</resources>

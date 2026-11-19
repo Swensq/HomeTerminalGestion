@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                style="@style/Titulo"
+                android:text="@string/titulo_registro" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                style="@style/Campo"
+                android:layout_marginTop="24dp"
+                android:hint="@string/hint_nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etUsuario"
+                style="@style/Campo"
+                android:hint="@string/hint_usuario_nuevo"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/Campo"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/Campo"
+                android:hint="@string/hint_password_nueva"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etRepetir"
+                style="@style/Campo"
+                android:hint="@string/hint_repetir_password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnCrear"
+                style="@style/Boton"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_crear_cuenta" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                style="@style/BotonBorde"
+                android:text="@string/btn_volver" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

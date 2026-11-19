@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Home Terminal Gestión</string>
+
+    <!-- login -->
+    <string name="titulo_login">Sistema de Gestión</string>
+    <string name="subtitulo_login">Home Terminal</string>
+    <string name="hint_usuario">Ingresá tu usuario</string>
+    <string name="hint_password">Ingresá tu contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="msg_login_incorrecto">Usuario o contraseña incorrectos</string>
+    <string name="msg_completa_usuario_password">Completá usuario y contraseña</string>
+
+    <!-- registro -->
+    <string name="titulo_registro">Crear cuenta</string>
+    <string name="hint_nombre">Ingresá tu nombre completo</string>
+    <string name="hint_usuario_nuevo">Elegí un nombre de usuario</string>
+    <string name="hint_email">Ingresá tu email</string>
+    <string name="hint_password_nueva">Elegí una contraseña (mínimo 4 caracteres)</string>
+    <string name="hint_repetir_password">Repetí la contraseña</string>
+    <string name="btn_crear_cuenta">Crear cuenta</string>
+    <string name="btn_volver">Volver</string>
+    <string name="msg_registro_ok">¡Usuario registrado! Ya podés ingresar</string>
+
+    <!-- validaciones -->
+    <string name="msg_completa_campos">Completá todos los campos</string>
+    <string name="error_campo_vacio">Este campo es obligatorio</string>
+    <string name="error_email_invalido">El email no tiene un formato válido</string>
+    <string name="error_password_corta">La contraseña debe tener al menos 4 caracteres</string>
+    <string name="error_password_distinta">Las contraseñas no coinciden</string>
+    <string name="error_usuario_existe">Ese usuario ya está registrado</string>
+    <string name="error_email_existe">Ese email ya está registrado</string>
+    <string name="msg_error_bd">Ocurrió un error con la base de datos</string>
+
+    <!-- menu -->
+    <string name="saludo">¡Hola, %1$s!</string>
+    <string name="btn_usuarios">Usuarios</string>
+    <string name="btn_dispositivos">Dispositivos</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+
+    <!-- usuarios -->
+    <string name="titulo_usuarios">Usuarios</string>
+    <string name="btn_agregar_usuario">Agregar usuario</string>
+    <string name="titulo_usuario_nuevo">Nuevo usuario</string>
+    <string name="titulo_usuario_editar">Editar usuario</string>
+    <string name="msg_sin_usuarios">No hay usuarios cargados</string>
+    <string name="msg_usuario_guardado">Usuario guardado</string>
+    <string name="msg_usuario_eliminado">Usuario eliminado</string>
+    <string name="msg_no_eliminar_propio">No podés eliminar al usuario que tiene la sesión iniciada</string>
+    <string name="item_usuario">%1$s (%2$s) - %3$s - %4$s</string>
+
+    <!-- dispositivos -->
+    <string name="titulo_dispositivos">Dispositivos</string>
+    <string name="btn_agregar_dispositivo">Agregar dispositivo</string>
+    <string name="titulo_dispositivo_nuevo">Nuevo dispositivo</string>
+    <string name="titulo_dispositivo_editar">Editar dispositivo</string>
+    <string name="msg_sin_dispositivos">No hay dispositivos cargados</string>
+    <string name="msg_dispositivo_guardado">Dispositivo guardado</string>
+    <string name="msg_dispositivo_eliminado">Dispositivo eliminado</string>
+    <string name="hint_nombre_dispositivo">Ej: TV Living</string>
+    <string name="label_tipo">Tipo de dispositivo</string>
+    <string name="tipo_tv">TV</string>
+    <string name="tipo_consola">Consola</string>
+    <string name="tipo_audio">Audio</string>
+    <string name="tipo_otro">Otro</string>
+    <string name="hint_hdmi">Puerto HDMI (1 a 4, opcional)</string>
+    <string name="error_tipo">Elegí el tipo de dispositivo</string>
+    <string name="error_hdmi">El puerto HDMI debe ser un número del 1 al 4</string>
+    <string name="error_dispositivo_existe">Ya existe un dispositivo con ese nombre</string>
+    <string name="sin_habitacion">sin habitación</string>
+
+    <!-- formularios -->
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="dialogo_titulo_eliminar">Eliminar</string>
+    <string name="dialogo_msg_usuario">¿Seguro que querés eliminar este usuario?</string>
+    <string name="dialogo_msg_dispositivo">¿Seguro que querés eliminar este dispositivo?</string>
+    <string name="dialogo_si">Sí, eliminar</string>
+    <string name="dialogo_no">Cancelar</string>
+
+    <!-- roles -->
+    <string name="rol_admin">Administrador</string>
+    <string name="rol_usuario">Usuario</string>
+    <string name="rol_menu">Rol: %1$s</string>
+    <string name="label_rol">Rol del usuario</string>
+    <string name="msg_no_quitar_admin">No podés quitarte a vos mismo el rol de administrador</string>
+    <string name="btn_mi_cuenta">Mi cuenta</string>
+    <string name="titulo_mi_cuenta">Mi cuenta</string>
+
+    <!-- habitaciones -->
+    <string name="btn_habitaciones">Habitaciones</string>
+    <string name="titulo_habitaciones">Habitaciones</string>
+    <string name="btn_agregar_habitacion">Agregar habitación</string>
+    <string name="titulo_habitacion_nueva">Nueva habitación</string>
+    <string name="titulo_habitacion_editar">Editar habitación</string>
+    <string name="msg_sin_habitaciones">No hay habitaciones cargadas</string>
+    <string name="msg_habitacion_guardada">Habitación guardada</string>
+    <string name="msg_habitacion_eliminada">Habitación eliminada</string>
+    <string name="msg_habitacion_con_dispositivos">No se puede eliminar: la habitación todavía tiene dispositivos. Movelos a otra habitación primero</string>
+    <string name="hint_nombre_habitacion">Ej: Living</string>
+    <string name="hint_descripcion">Descripción (opcional)</string>
+    <string name="error_habitacion_existe">Ya existe una habitación con ese nombre</string>
+    <string name="dialogo_msg_habitacion">¿Seguro que querés eliminar esta habitación?</string>
+    <string name="item_habitacion">%1$s - %2$s</string>
+    <string name="sin_descripcion">sin descripción</string>
+    <string name="label_habitacion">Habitación</string>
+    <string name="opcion_sin_habitacion">Sin habitación</string>
+
+    <!-- red -->
+    <string name="hint_ip">Dirección IP (opcional), ej: 192.168.0.10</string>
+    <string name="hint_puerto_red">Puerto de red (1 a 65535, si falta se usa 80)</string>
+    <string name="error_ip">La dirección IP no es válida</string>
+    <string name="error_puerto_red">El puerto debe ser un número del 1 al 65535</string>
+    <string name="btn_probar">Probar conexión</string>
+    <string name="btn_probando">Probando...</string>
+    <string name="btn_panel_web">Abrir panel web</string>
+    <string name="msg_sin_navegador">No hay ningún navegador para abrir el panel</string>
+    <string name="estado_nunca">Todavía no se verificó</string>
+    <string name="estado_en_linea">En línea (%1$s)</string>
+    <string name="estado_sin_respuesta">Sin respuesta (%1$s)</string>
+    <string name="btn_verificar_todos">Verificar todos</string>
+    <string name="verificando">Verificando %1$d de %2$d...</string>
+    <string name="msg_sin_ips">Ningún dispositivo tiene IP cargada</string>
+    <string name="msg_resultado_verificacion">%1$d en línea de %2$d</string>
+    <string name="item_linea1">%1$s - %2$s</string>
+    <string name="item_linea2_ip">%1$s, %2$s, %3$s</string>
+    <string name="item_linea2_sin_ip">%1$s, sin IP</string>
+    <string name="sin_verificar">sin verificar</string>
+
+    <!-- resumen del menu -->
+    <string name="titulo_resumen">Resumen</string>
+    <string name="resumen_total">Dispositivos: %1$d</string>
+    <string name="resumen_en_linea">En línea: %1$d de %2$d verificados</string>
+    <string name="resumen_habitacion">%1$s: %2$d</string>
+
+    <!-- etiquetas del formulario de dispositivo -->
+    <string name="label_nombre_dispositivo">Nombre del dispositivo</string>
+    <string name="label_hdmi">Puerto HDMI</string>
+    <string name="label_ip">Dirección IP</string>
+    <string name="label_puerto_red">Puerto de red</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvSaludo"
+                style="@style/Titulo" />
+
+            <TextView
+                android:id="@+id/tvRol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/calido"
+                android:textSize="16sp" />
+
+            <!-- resumen de la red -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/campo"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_resumen"
+                    android:textColor="@color/acento"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvResumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/texto"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUsuarios"
+                style="@style/Boton"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_usuarios" />
+
+            <Button
+                android:id="@+id/btnMiCuenta"
+                style="@style/Boton"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_mi_cuenta"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnDispositivos"
+                style="@style/Boton"
+                android:text="@string/btn_dispositivos" />
+
+            <Button
+                android:id="@+id/btnHabitaciones"
+                style="@style/Boton"
+                android:text="@string/btn_habitaciones" />
+
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                style="@style/BotonBorde"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_cerrar_sesion" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

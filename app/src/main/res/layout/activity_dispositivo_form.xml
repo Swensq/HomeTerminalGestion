@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DispositivoFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                style="@style/Titulo"
+                android:text="@string/titulo_dispositivo_nuevo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/label_nombre_dispositivo"
+                android:textColor="@color/calido"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                style="@style/Campo"
+                android:hint="@string/hint_nombre_dispositivo"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_tipo"
+                android:textColor="@color/calido"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rgTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/acento"
+                    android:text="@string/tipo_tv"
+                    android:textColor="@color/texto" />
+
+                <RadioButton
+                    android:id="@+id/rbConsola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/acento"
+                    android:text="@string/tipo_consola"
+                    android:textColor="@color/texto" />
+
+                <RadioButton
+                    android:id="@+id/rbAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/acento"
+                    android:text="@string/tipo_audio"
+                    android:textColor="@color/texto" />
+
+                <RadioButton
+                    android:id="@+id/rbOtro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/acento"
+                    android:text="@string/tipo_otro"
+                    android:textColor="@color/texto" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_hdmi"
+                android:textColor="@color/calido"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etHdmi"
+                style="@style/Campo"
+                android:hint="@string/hint_hdmi"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_habitacion"
+                android:textColor="@color/calido"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spHabitacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_ip"
+                android:textColor="@color/calido"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etIp"
+                style="@style/Campo"
+                android:hint="@string/hint_ip"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_puerto_red"
+                android:textColor="@color/calido"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPuertoRed"
+                style="@style/Campo"
+                android:hint="@string/hint_puerto_red"
+                android:inputType="number" />
+
+            <!-- estado de red: solo al editar un dispositivo que tiene IP -->
+            <LinearLayout
+                android:id="@+id/layoutRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/calido"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnProbar"
+                    style="@style/BotonBorde"
+                    android:text="@string/btn_probar" />
+
+                <Button
+                    android:id="@+id/btnPanel"
+                    style="@style/BotonBorde"
+                    android:text="@string/btn_panel_web" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                style="@style/Boton"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_guardar" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                style="@style/BotonPeligro"
+                android:text="@string/btn_eliminar"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                style="@style/BotonBorde"
+                android:text="@string/btn_volver" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
