@@ -14,6 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeTerminalGestion">
         <activity
+            android:name=".BuscarActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".HabitacionFormActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />

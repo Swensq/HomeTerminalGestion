@@ -357,6 +357,18 @@ public class DbHelper extends SQLiteOpenHelper {
         return d;
     }
 
+    // las IP que ya estan guardadas en dispositivos
+    public ArrayList<String> listarIps() {
+        ArrayList<String> lista = new ArrayList<>();
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor c = db.rawQuery("SELECT ip FROM dispositivos WHERE ip IS NOT NULL", null);
+        while (c.moveToNext()) {
+            lista.add(c.getString(0));
+        }
+        c.close();
+        return lista;
+    }
+
     public boolean existeDispositivo(String nombre, int excluirId) {
         SQLiteDatabase db = getReadableDatabase();
         Cursor c = db.rawQuery("SELECT id FROM dispositivos WHERE nombre = ? AND id <> ?",

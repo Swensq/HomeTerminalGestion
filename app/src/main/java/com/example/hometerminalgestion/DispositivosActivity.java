@@ -23,7 +23,7 @@ public class DispositivosActivity extends AppCompatActivity {
     ListView lista;
     TextView tvVacio, tvProgreso;
     ProgressBar progreso;
-    Button btnAgregar, btnVerificar, btnVolver;
+    Button btnAgregar, btnVerificar, btnBuscar, btnVolver;
     DbHelper db;
     ArrayList<Dispositivo> dispositivos = new ArrayList<>();
     boolean cerrada = false; // pasa a true cuando se cierra la pantalla, para que el hilo pare
@@ -45,6 +45,7 @@ public class DispositivosActivity extends AppCompatActivity {
         progreso = findViewById(R.id.progreso);
         btnAgregar = findViewById(R.id.btnAgregar);
         btnVerificar = findViewById(R.id.btnVerificar);
+        btnBuscar = findViewById(R.id.btnBuscar);
         btnVolver = findViewById(R.id.btnVolver);
         db = new DbHelper(this);
 
@@ -71,6 +72,13 @@ public class DispositivosActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 verificarTodos();
+            }
+        });
+
+        btnBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DispositivosActivity.this, BuscarActivity.class));
             }
         });
 
@@ -133,6 +141,7 @@ public class DispositivosActivity extends AppCompatActivity {
         final int total = aVerificar.size();
         btnVerificar.setEnabled(false);
         btnAgregar.setEnabled(false);
+        btnBuscar.setEnabled(false);
         progreso.setMax(total);
         progreso.setProgress(0);
         progreso.setVisibility(View.VISIBLE);
@@ -184,6 +193,7 @@ public class DispositivosActivity extends AppCompatActivity {
                         tvProgreso.setVisibility(View.GONE);
                         btnVerificar.setEnabled(true);
                         btnAgregar.setEnabled(true);
+                        btnBuscar.setEnabled(true);
                         cargarLista();
                         Toast.makeText(DispositivosActivity.this,
                                 getString(R.string.msg_resultado_verificacion, cantidadEnLinea, total),

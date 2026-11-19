@@ -52,20 +52,53 @@
             android:textColor="@color/apagado"
             android:visibility="gone" />
 
-        <Button
-            android:id="@+id/btnVerificar"
-            style="@style/Boton"
-            android:text="@string/btn_verificar_todos" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnAgregar"
-            style="@style/BotonBorde"
-            android:text="@string/btn_agregar_dispositivo" />
+            <Button
+                android:id="@+id/btnVerificar"
+                style="@style/Boton"
+                android:layout_width="0dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="@string/btn_verificar_todos"
+                android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/btnVolver"
-            style="@style/BotonBorde"
-            android:text="@string/btn_volver" />
+            <Button
+                android:id="@+id/btnBuscar"
+                style="@style/Boton"
+                android:layout_width="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="@string/btn_buscar_red"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAgregar"
+                style="@style/BotonBorde"
+                android:layout_width="0dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="@string/btn_agregar_dispositivo"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                style="@style/BotonBorde"
+                android:layout_width="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="@string/btn_volver"
+                android:textSize="14sp" />
+        </LinearLayout>
 
     </LinearLayout>
 

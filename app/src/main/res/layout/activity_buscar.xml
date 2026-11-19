@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BuscarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            style="@style/Titulo"
+            android:text="@string/titulo_buscar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_red"
+            android:textColor="@color/calido"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etRed"
+            style="@style/Campo"
+            android:hint="@string/hint_red"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/nota_red"
+            android:textColor="@color/apagado"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            style="@style/Boton"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_buscar" />
+
+        <TextView
+            android:id="@+id/tvProgreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/calido"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progreso"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="254"
+            android:progressTint="@color/acento"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/texto"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/superficie"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            style="@style/Boton"
+            android:text="@string/btn_agregar_seleccionados" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/BotonBorde"
+            android:text="@string/btn_volver" />
+
+    </LinearLayout>
+
+</LinearLayout>

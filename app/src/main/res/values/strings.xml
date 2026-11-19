@@ -138,4 +138,20 @@
     <string name="label_hdmi">Puerto HDMI</string>
     <string name="label_ip">Dirección IP</string>
     <string name="label_puerto_red">Puerto de red</string>
+
+    <!-- buscar en la red -->
+    <string name="btn_buscar_red">Buscar en la red</string>
+    <string name="titulo_buscar">Buscar en la red</string>
+    <string name="label_red">Red (los tres primeros números)</string>
+    <string name="hint_red">Ej: 192.168.0</string>
+    <string name="nota_red">En el emulador la red detectada es la del propio emulador (10.0.2). Para buscar en tu casa escribí la red de tu casa.</string>
+    <string name="error_red">Escribí tres números del 0 al 255 separados por puntos</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="buscando">Buscando... %1$d de %2$d</string>
+    <string name="encontrados">Encontrados: %1$d (%2$d ya estaban agregados)</string>
+    <string name="msg_nada_encontrado">No se encontró ningún equipo que responda en el puerto 80</string>
+    <string name="btn_agregar_seleccionados">Agregar seleccionados</string>
+    <string name="msg_nada_seleccionado">Marcá al menos un equipo de la lista</string>
+    <string name="msg_dispositivos_agregados">Se agregaron %1$d dispositivos</string>
+    <string name="nombre_dispositivo_red">Dispositivo %1$s</string>
 </resources>
